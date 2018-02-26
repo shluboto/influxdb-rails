@@ -81,6 +81,10 @@ To work around this limitation, set the `config.time_precision` to one
 of `"ms"` (milliseconds, 1·10<sup>-3</sup>s), `"us"` (microseconds,
 1·10<sup>-6</sup>s) or `"ns"` (nanoseconds, 1·10<sup>-9</sup>s).
 
+**Please note:** The default value for the time precision is going to
+change with version 1.0 of this gem, although the final value is not
+determined yet.
+
 [duplicate-points]: https://docs.influxdata.com/influxdb/v1.4/troubleshooting/frequently-asked-questions/#how-does-influxdb-handle-duplicate-points
 
 
