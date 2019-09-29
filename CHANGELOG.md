@@ -7,6 +7,11 @@ For the full commit log, [see here](https://github.com/influxdata/influxdb-rails
 
 - None.
 
+## v0.4.99, released 2017-12-12
+
+- No code changes, just inform people about 1.0 in the
+  gem post install message
+
 ## v0.4.3, released 2017-12-12
 
 - Added `time_precision` config option (#42, @kkentzo)

@@ -7,7 +7,6 @@ before_install:
 rvm:
   - 2.4.2
   - 2.3.5
-  - 2.2.8
 gemfile:
   - gemfiles/Gemfile.rails-5.1.x
   - gemfiles/Gemfile.rails-5.0.x
@@ -16,10 +15,6 @@ gemfile:
   - gemfiles/Gemfile.rails-4.0.x
 matrix:
   exclude:
-    # Rails 5+ only on MRI 2.3+
-    - { rvm: "2.2.8",   gemfile: "gemfiles/Gemfile.rails-5.1.x" }
-    - { rvm: "2.2.8",   gemfile: "gemfiles/Gemfile.rails-5.0.x" }
-
     # Rails < 5 not on MRI 2.4
     - { rvm: "2.4.2", gemfile: "gemfiles/Gemfile.rails-4.2.x" }
     - { rvm: "2.4.2", gemfile: "gemfiles/Gemfile.rails-4.1.x" }
