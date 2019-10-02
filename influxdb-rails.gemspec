@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
     "source_code_uri"   => "https://github.com/influxdata/influxdb-rails"
   }
 
-  s.files         = Dir.glob('**/*')
+  s.files         = `git ls-files`.split($/)
   s.test_files    = Dir.glob('test/**/*') + Dir.glob('spec/**/*') + Dir.glob('features/**/*')
   s.executables   = Dir.glob('bin/**/*').map {|f| File.basename(f)}
   s.require_paths = ["lib"]
